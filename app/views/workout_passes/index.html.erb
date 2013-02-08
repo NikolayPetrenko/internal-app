@@ -1,0 +1,35 @@
+<h1>Listing workout_passes</h1>
+
+<table>
+  <tr>
+    <th>Assigned by</th>
+    <th>Owner</th>
+    <th>Assigned to</th>
+    <th>Workout</th>
+    <th>Total time</th>
+    <th>Start time</th>
+    <th>End time</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @workout_passes.each do |workout_pass| %>
+  <tr>
+    <td><%= workout_pass.assigned_by %></td>
+    <td><%= workout_pass.owner %></td>
+    <td><%= workout_pass.assigned_to %></td>
+    <td><%= workout_pass.workout %></td>
+    <td><%= workout_pass.total_time %></td>
+    <td><%= workout_pass.start_time %></td>
+    <td><%= workout_pass.end_time %></td>
+    <td><%= link_to 'Show', workout_pass %></td>
+    <td><%= link_to 'Edit', edit_workout_pass_path(workout_pass) %></td>
+    <td><%= link_to 'Destroy', workout_pass, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Workout pass', new_workout_pass_path %>

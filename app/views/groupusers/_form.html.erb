@@ -1,0 +1,17 @@
+<%= form_for(@groupuser) do |f| %>
+  <% if @groupuser.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@groupuser.errors.count, "error") %> prohibited this groupuser from being saved:</h2>
+
+      <ul>
+      <% @groupuser.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+module WorkoutPassesHelper
+end

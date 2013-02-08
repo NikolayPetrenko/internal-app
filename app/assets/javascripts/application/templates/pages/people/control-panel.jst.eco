@@ -1,0 +1,10 @@
+<div class="row">
+  <form class="navbar-search pull-left">
+    <input type="text" class="search-query bb-keyup-search" placeholder="Search">
+  </form>
+
+  <div class="btn-group pull-right">
+    <button class="btn">Any Buttons here?</button>    
+  </div>
+
+</div>

@@ -1,0 +1,7 @@
+<div class="control-group errors-container"></div>
+<div class="control-group">
+  <label class="control-label" for="inputName">New name</label>
+  <div class="controls">
+    <input type="text" id="inputName" name="title" placeholder="Test Title">
+  </div>
+</div>

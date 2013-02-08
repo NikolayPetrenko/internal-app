@@ -1,0 +1,3 @@
+<a href="#" class="thumbnail">
+  <img src="<%- @attachment.thumb.url %>" />
+</a>

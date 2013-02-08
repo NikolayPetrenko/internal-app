@@ -1,0 +1,21 @@
+<h1>Listing groupusers</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @groupusers.each do |groupuser| %>
+  <tr>
+    <td><%= link_to 'Show', groupuser %></td>
+    <td><%= link_to 'Edit', edit_groupuser_path(groupuser) %></td>
+    <td><%= link_to 'Destroy', groupuser, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Groupuser', new_groupuser_path %>

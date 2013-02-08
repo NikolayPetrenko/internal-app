@@ -1,0 +1,45 @@
+<%= form_for(@workout_pass) do |f| %>
+  <% if @workout_pass.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@workout_pass.errors.count, "error") %> prohibited this workout_pass from being saved:</h2>
+
+      <ul>
+      <% @workout_pass.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :assigned_by %><br />
+    <%= f.text_field :assigned_by %>
+  </div>
+  <div class="field">
+    <%= f.label :owner %><br />
+    <%= f.text_field :owner %>
+  </div>
+  <div class="field">
+    <%= f.label :assigned_to %><br />
+    <%= f.text_field :assigned_to %>
+  </div>
+  <div class="field">
+    <%= f.label :workout %><br />
+    <%= f.text_field :workout %>
+  </div>
+  <div class="field">
+    <%= f.label :total_time %><br />
+    <%= f.number_field :total_time %>
+  </div>
+  <div class="field">
+    <%= f.label :start_time %><br />
+    <%= f.date_select :start_time %>
+  </div>
+  <div class="field">
+    <%= f.label :end_time %><br />
+    <%= f.date_select :end_time %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

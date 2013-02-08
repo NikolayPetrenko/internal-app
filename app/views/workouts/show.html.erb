@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @workout.user %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @workout.title %>
+</p>
+
+<p>
+  <b>Allow question skip:</b>
+  <%= @workout.allow_question_skip %>
+</p>
+
+<p>
+  <b>Warn empty questions:</b>
+  <%= @workout.warn_empty_questions %>
+</p>
+
+
+<%= link_to 'Edit', edit_workout_path(@workout) %> |
+<%= link_to 'Back', workouts_path %>

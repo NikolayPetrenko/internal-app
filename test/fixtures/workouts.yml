@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user: 
+  title: MyString
+  allow_question_skip: false
+  warn_empty_questions: false
+
+two:
+  user: 
+  title: MyString
+  allow_question_skip: false
+  warn_empty_questions: false

@@ -1,0 +1,24 @@
+<div class="row">
+  <% if @answer_type is "checkbox": %>
+    <input type="checkbox" 
+      class="bb-click-make-valid" 
+      <%= if @is_valid then "checked='checked'" else '' %> 
+      name="is_valid[<%- @cid %>]" value="<%- @cid %>" 
+    />
+  <% else if @answer_type is "radio": %>
+    <input 
+      type="radio" class="bb-click-make-valid" name="is_valid" value="<%- @cid %>" 
+      <%= if @is_valid then "checked='checked'" else '' %> 
+    />
+  <% end %>
+
+  <textarea class="bb-change-body" name="answer[<%- @cid %>]" placeholder="Answer here..." id="answer-item-<%- @cid %>"><%- @body %></textarea>
+
+  <a href="#" class="bb-click-remove">x</a>
+  
+  <div class="expand-link-container">
+    <a href="#" class="bb-click-expand">
+      <i class="icon-fullscreen"></i>
+    </a>
+  </div>
+</div>

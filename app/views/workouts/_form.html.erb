@@ -1,0 +1,33 @@
+<%= form_for(@workout) do |f| %>
+  <% if @workout.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@workout.errors.count, "error") %> prohibited this workout from being saved:</h2>
+
+      <ul>
+      <% @workout.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :user %><br />
+    <%= f.text_field :user %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :allow_question_skip %><br />
+    <%= f.check_box :allow_question_skip %>
+  </div>
+  <div class="field">
+    <%= f.label :warn_empty_questions %><br />
+    <%= f.check_box :warn_empty_questions %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

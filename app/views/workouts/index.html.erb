@@ -1,0 +1,29 @@
+<h1>Listing workouts</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Title</th>
+    <th>Allow question skip</th>
+    <th>Warn empty questions</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @workouts.each do |workout| %>
+  <tr>
+    <td><%= workout.user %></td>
+    <td><%= workout.title %></td>
+    <td><%= workout.allow_question_skip %></td>
+    <td><%= workout.warn_empty_questions %></td>
+    <td><%= link_to 'Show', workout %></td>
+    <td><%= link_to 'Edit', edit_workout_path(workout) %></td>
+    <td><%= link_to 'Destroy', workout, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Workout', new_workout_path %>

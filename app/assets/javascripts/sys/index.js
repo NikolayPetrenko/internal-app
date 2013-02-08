@@ -1,0 +1,11 @@
+//= require_tree ./templates
+//= require sys/utils
+//= require sys/view
+//= require sys/dialog
+//= require sys/sync
+//= require sys/model
+//= require sys/collection
+//= require sys/views/list
+//= require sys/views/form
+//= require sys/views/select
+//= require sys/views/selectable-list

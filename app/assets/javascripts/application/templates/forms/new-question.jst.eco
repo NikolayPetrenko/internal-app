@@ -1,0 +1,29 @@
+<div class="control-group errors-container"></div>
+<div class="control-group">
+  
+  <select name="type" class="pull-right bb-change-type">
+    <option value="radio">Single</option>
+    <option value="checkbox">Multiple</option>
+    <option value="text">Text</option>
+  </select>
+  <label class="control-label" for="inputName">New name</label>
+  <div class="controls">
+
+
+    <!-- <div id="wysihtml5-toolbar" style="display: none;">
+      <a data-wysihtml5-command="bold">bold</a>
+      <a data-wysihtml5-command="italic">italic</a>
+    </div> -->
+
+    <textarea  id="wysihtml5-textarea" class="question-body bb-change-body" name="body" placeholder="The body of question here..."><%= @body %></textarea>
+    <div class="expand-link-container">
+      <a href="#" class="bb-click-expand">
+        <i class="icon-fullscreen"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="control-group bb-answers-container">
+
+</div>

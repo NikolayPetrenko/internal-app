@@ -1,0 +1,2 @@
+<%= @title %> <a href="#" class="bb-click-drop">drop</a>
+<a href="#" class="bb-click-add">Add selected items</a>

@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Assigned by:</b>
+  <%= @workout_pass.assigned_by %>
+</p>
+
+<p>
+  <b>Owner:</b>
+  <%= @workout_pass.owner %>
+</p>
+
+<p>
+  <b>Assigned to:</b>
+  <%= @workout_pass.assigned_to %>
+</p>
+
+<p>
+  <b>Workout:</b>
+  <%= @workout_pass.workout %>
+</p>
+
+<p>
+  <b>Total time:</b>
+  <%= @workout_pass.total_time %>
+</p>
+
+<p>
+  <b>Start time:</b>
+  <%= @workout_pass.start_time %>
+</p>
+
+<p>
+  <b>End time:</b>
+  <%= @workout_pass.end_time %>
+</p>
+
+
+<%= link_to 'Edit', edit_workout_pass_path(@workout_pass) %> |
+<%= link_to 'Back', workout_passes_path %>

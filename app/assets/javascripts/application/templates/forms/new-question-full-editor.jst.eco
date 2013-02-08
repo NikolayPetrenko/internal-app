@@ -1,0 +1,8 @@
+<div class="controls full-editor">
+  <textarea  id="wysihtml5-textarea-full" class="question-body bb-change-body" name="body" placeholder="The body of question here..."></textarea>
+  <div class="collapse-link">
+    <a href="#" class="bb-click-collapse">
+      <i class="icon-fullscreen"></i>
+    </a>
+  </div>
+</div>

@@ -1,0 +1,1 @@
+class @AnswersCollection extends Collection

@@ -1,0 +1,88 @@
+@mixin roundcorners($radius) {
+  -moz-border-radius: $radius;    // firefox
+  -webkit-border-radius: $radius; // safari/chrome
+  border-radius: $radius;         // CSS3, works in IE9
+}
+
+.modal {
+  top: -5px;
+  width: 583px;
+}
+
+.question-body {
+  width: 513px;
+  height: 100px;
+  resize: none
+};
+
+.expand-link-container, .collapse-link {
+  position: absolute;
+  right: 25px;
+  margin-top: -35px;
+
+  a:hover {
+    background-color: white;
+  }
+}
+
+.full-editor {
+  // position: absolute;
+  // z-index: 1;
+  // top: 0;
+  // background: silver;
+  // left: 0px;
+  // overflow-y: hidden;
+  // overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  
+
+  .collapse-link {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+  }
+
+  #wysihtml5-textarea-full {
+    width: 526px;
+    height: 340px;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    @include roundcorners(0px);
+  }
+}
+
+#wysihtml5-toolbar-full {
+
+}
+
+.bb-answers-container {
+  li {
+    list-style-type: none;
+
+    .expand-link-container {
+      display: none;
+    }
+
+    &:hover {
+      .expand-link-container {
+        display: block;
+      }      
+    }
+
+    textarea {
+      resize: none;
+      height: 20px;
+      width: 478px;
+    }
+  }
+}
+
+.modal-body ul .image-holder {
+  width: 112px;
+}
+
+.thumbnails li.active {
+  border-color: black;
+}

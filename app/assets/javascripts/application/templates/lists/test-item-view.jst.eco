@@ -1,0 +1,6 @@
+<div class="row">
+  <%- @title %>
+  <a href="#" class="bb-click-remove">Remove</a>
+  <a href="#tests/<%- @id %>" class="bb-click-edit">Edit</a>
+  <button class="btn bb-click-schedule">Schedule</button>
+</div>

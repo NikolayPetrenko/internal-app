@@ -1,0 +1,39 @@
+<div id="wysihtml5-toolbar-full" style="display: none;">
+  <div class="btn-group first">
+    <a data-wysihtml5-command="bold" class="btn">
+      <b>B</b>
+    </a>
+    <a data-wysihtml5-command="italic" class="btn">
+      <i>I</i>
+    </a>
+    <a data-wysihtml5-command="underline" class="btn">
+      <u>U</u>
+    </a>
+  </div>
+
+  <div class="btn-group">
+    <a data-wysihtml5-command="justifyLeft" class="btn">
+      <i class="icon-align-left"></i>
+    </a>
+    <a data-wysihtml5-command="justifyCenter" class="btn">
+      <i class="icon-align-center"></i>
+    </a>
+    <a data-wysihtml5-command="justifyRight" class="btn">
+      <i class="icon-align-right"></i>
+    </a>    
+  </div>
+
+  <div class="btn-group">
+    <a data-wysihtml5-command="fontSize" class="btn" data-wysihtml5-command-value="large">H1</a>
+    <a data-wysihtml5-command="fontSize" class="btn" data-wysihtml5-command-value="medium">H2</a>
+    <a data-wysihtml5-command="fontSize" class="btn" data-wysihtml5-command-value="small">H3</a>
+  </div>
+
+  <div class="btn-group">
+    <a class="btn bb-click-show-images">images</a>
+  </div>
+  
+
+  
+  
+</div>

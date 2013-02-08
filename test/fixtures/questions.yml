@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  workout: 
+  body: MyText
+  type: 
+  random_answers: false
+
+two:
+  workout: 
+  body: MyText
+  type: 
+  random_answers: false

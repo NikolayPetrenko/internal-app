@@ -1,0 +1,9 @@
+//= require 3d-party/jquery.1.8.3
+//= require jquery_ujs
+//= require 3d-party/underscore.1.4.3
+//= require 3d-party/backbone.0.9.9
+//= require 3d-party/jquery.cookie
+//= require 3d-party/jquery.form.params
+//= require 3d-party/wysi/advanced
+//= require 3d-party/wysi/wysihtml5-0.3.0
+//= require 3d-party/jquery.fileupload/index

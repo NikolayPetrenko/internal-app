@@ -1,0 +1,22 @@
+<div class="well well-small">
+
+
+  <div class="btn-group pull-right">
+    <button class="btn bb-click-remove">Delete</button>
+    <button class="btn bb-click-edit">Edit</button>
+  </div>
+
+
+
+  <%- @body %>
+  <form>
+    <ul>
+      <% for answer in @answers: %>
+        <li>
+          <input type="<%= @answer_type %>" disabled="disabled" <% if answer.is_valid: %> selected="selected" checked <% end %> name="answer<%- @id %>" />
+          <%- answer.body %>
+        </li>
+      <% end %>
+    </ul>
+  </form>
+</div>

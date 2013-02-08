@@ -1,0 +1,6 @@
+<div>
+  <%= @title %> 
+</div>
+<div>
+  People: <%= @users_count %>
+</div>
